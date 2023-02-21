@@ -1,0 +1,25 @@
+App\Post\Domain\PublicationDate:
+  publication_date_1:
+    __factory:
+      create: ['<dateTimeImmutable(2023-02-21 00:00:00)>', '<dateTimeImmutable(2024-02-21 23:59:59)>']
+  publication_date_2:
+    __factory:
+      create: ['<dateTimeImmutable(2023-03-21 00:00:00)>', '<dateTimeImmutable(2024-03-21 23:59:59)>']
+
+App\Post\Domain\Post:
+  post_1:
+    __factory:
+      create:
+        - '<uuid4(94434310-e7c7-4543-ac20-f493fa698bb1)>'
+        - 'title'
+        - '<enum(App\Post\Domain\Category::NEWS)>'
+        - 'body'
+        - '@publication_date_1'
+  post_2:
+    __factory:
+      create:
+        - '<uuid4(0b125268-b109-45f1-8e62-d8026824c0e5)>'
+        - 'blog'
+        - '<enum(App\Post\Domain\Category::BLOG)>'
+        - 'body'
+        - '@publication_date_2'

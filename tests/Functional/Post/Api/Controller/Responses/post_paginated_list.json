@@ -1,0 +1,15 @@
+{
+  "data": {
+    "page": 2,
+    "per_page": 1,
+    "total_count": 3,
+    "total_page_count": 3,
+    "items": [
+      {
+        "category": "@string@",
+        "title": "blog",
+        "url": "@string@"
+      }
+    ]
+  }
+}

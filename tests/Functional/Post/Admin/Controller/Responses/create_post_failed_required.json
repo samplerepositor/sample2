@@ -1,0 +1,22 @@
+{
+  "message": "@string@",
+  "type": "form_error",
+  "errors": [
+    {
+      "field": "title",
+      "message": "@string@"
+    },
+    {
+      "field": "category",
+      "message": "@string@"
+    },
+    {
+      "field": "category",
+      "message": "@string@"
+    },
+    {
+      "field": "body",
+      "message": "@string@"
+    }
+  ]
+}

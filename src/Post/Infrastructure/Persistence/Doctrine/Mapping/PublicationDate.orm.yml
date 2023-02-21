@@ -1,0 +1,9 @@
+App\Post\Domain\PublicationDate:
+  type: embeddable
+  fields:
+    from:
+      type: datetime_immutable
+      nullable: true
+    to:
+      type: datetime_immutable
+      nullable: true

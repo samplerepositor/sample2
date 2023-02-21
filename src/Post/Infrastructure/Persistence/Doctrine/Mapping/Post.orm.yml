@@ -1,0 +1,28 @@
+App\Post\Domain\Post:
+  type: entity
+  table: post
+  repositoryClass: App\Post\Infrastructure\Persistence\Doctrine\Repository\Post\DoctrineORMRepository
+  id:
+    id:
+      type: uuid
+      nullable: false
+      unique: true
+      generator:
+        strategy: NONE
+  fields:
+    title:
+      type: string
+      length: 250
+    category:
+      type: string
+      enumType: App\Post\Domain\Category
+    body:
+      type: string
+    updatedAt:
+      type: datetime_immutable
+      nullable: true
+    createdAt:
+      type: datetime_immutable
+  embedded:
+    publicationDate:
+      class: App\Post\Domain\PublicationDate
